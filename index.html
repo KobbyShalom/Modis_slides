@@ -1,38 +1,28 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>MODIS</title>
+    <title>index.knit</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Shalom Kobby Ampiaw" />
     <script src="libs/header-attrs-2.28/header-attrs.js"></script>
-    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
-class: center, middle, inverse, title-slide
 
-.title[
+class: center, middle, inverse
+background-image: url(week_2/Moderate_Resolution_Imaging_Spectroradiometer_643662448f.jpg)
+background-size: cover
+
 # MODIS
-]
-.subtitle[
-## Remote Sensing
-]
-.author[
-### Shalom Kobby Ampiaw
-]
-.institute[
-### UCL
-]
-.date[
-### 2025/03/11 (updated: 2025-03-26)
-]
+### Remote Sensing  
+
 
 ---
+## Content
 
-# Content
+&lt;div style="line-height: 1.9;"&gt;
 
-In this presentation we will be looking at;
+This presentation will cover;
 - What the **MODIS** sensor
 - Interesting facts about MODIS
 - Applications of MODIS
@@ -40,61 +30,106 @@ In this presentation we will be looking at;
 - Comparison of MODIS with other sensors
 - Reflection on MODIS.
 
-![MODIS sensor](week_2/Moderate_Resolution_Imaging_Spectroradiometer_643662448f.jpg){r  echo=FALSE, out.width='10%', fig.align='center'}
+&lt;div&gt;
 ---
-### Background 
-**MODIS** stands for Moderate Resolution Imaging Spectroradiometer. It was developed by NASA. It was first launched aboard the Terra satellite on December 18, 1999 and later on the Aqua satellite on May 4, 2002. (“MODIS Web,” n.d.).
-The data from MODIS is transmitted to ground stations through via Tracking and Data Relay Satellite System (TDRSS). It is then processed using the MODIS Adaptive Processing System (MODAPS). Further processing on ocean features is done by Ocean Colour Data Processing System (OCDPS) before published.
+
+## What is MODIS?
+
+&lt;div style="font-size: 85%; line-height: 1.45;"&gt;
+
+MODIS stands for **Moderate Resolution Imaging Spectroradiometer**. It was developed by NASA and first launched aboard the **Terra satellite** on December 18, 1999, followed by the **Aqua satellite** on May 4, 2002 (“MODIS Web,” n.d.).
+
+Data from MODIS is transmitted to ground stations via the Tracking and Data Relay Satellite System (TDRSS). It is then processed through the MODIS Adaptive Processing System (MODAPS). For ocean-specific features, further processing is handled by the Ocean Colour Data Processing System (OCDPS) before being published.
 
 --
 ### Key features.
-- It is onboard Terra and Aqua satellites as a sensor.
+- Operates onboard Terra and Aqua satellites.
 -	Has 3 spatial resolutions - - 250m, 500m, and 1,000m
--	It has a revisit time of 1-2days
--	Has 36 bands covering visible, infrared, and thermal wavelengths.
-  
+-	Revisit time of 1-2days
+-	Has 36 spectral bands spanning visible, infrared, and thermal wavelengths.
+
+&lt;div&gt; 
 ---
 ### Interesting facts about MODIS
+&lt;div style="font-size: 85%; line-height: 1.45;"&gt;
 
-- Amongst the Terra sensors it monitors the earth’s vitals such as monitoring earth’s cloud cover per day. 
-- It has sweeping 2330-km wide viewing swath  
-- In 2023, team responsible for the MODIS was awarded the Earth Science and Applications Award by the American Astronautical Society.
-- This was in recognition of the teams effort in developing MODIS which has provided detailed data on the Earth’s dynamic process and global environmental changes.
+- Among the Terra sensors, MODIS  tracks some environmental indicators such as the earth’s cloud cover per day. 
+- It has sweeping **2330-km** wide viewing swath  
+- In 2023, the MODIS team received the Earth Science and Applications Award 
+- This recognized MODIS' long-term contribution to understanding global environmental change and the team’s efforts in advancing Earth observation science
+&lt;div&gt; 
 
-![MODIS 2330km Swath](week_2/terra Modis.jpg){style="width:40%; display: block; margin: auto;"}
 
+&lt;img src="week_2/terra Modis.jpg" style="width: 45%; display: block; margin: auto;" /&gt;
+&lt;div style="font-size: 60%;"&gt;
+Source: [Ocean Color NASA](https://oceancolor.gsfc.nasa.gov/about/missions/terra/)
 
 ---
 ### Applications of MODIS
 
-Generally, it is used for general monitoring large-scale changes in the environment. 
- This involves:
-1.	Land Surface Monitoring – Such as areal extent of snow and ice during winter storms, Also monitoring the measuring chlorophyll fluorescence.
-2.	Ocean and water monitoring.
-3.	Carbon cycle monitoring: Idenfitying sources and sinks of carbon dioxide
-4.	Cloud monitoring: Tracks the 
-5.	Monitoring Aersols in the atmosphere. Measures the properties of the aerosols (Thome, n.d.)
-6.  Atmospheric monitoring: Measures the concentration of ozone in the atmosphere.
+&lt;div style="font-size: 85%; line-height: 1.45;"&gt;
 
-![MODIS imagery](week_2/MODIS.jpg)
+Generally, MODIS monitors large-scale changes in the environment. This includes:
+1.	Land Surface Monitoring – Snow/ice extent, chlorophyll fluorescence
+2.	Ocean and water monitoring.
+3.	Carbon cycle monitoring: Tracks CO₂ sources and sinks
+4.	Cloud monitoring: Monitors formation, coverage, movement
+5.	Monitoring Aerosols: Measures concentration and properties 
+6.  Atmospheric monitoring:  Ozone and gas monitoring to sustain air quality insights
+
+&lt;div&gt; 
+
+&lt;img src="week_2/MODIS.jpg" style="width: 125%; display: block; margin: auto;" /&gt;
+&lt;div style="font-size: 60%;"&gt;
+Source: [NASA TERRA ](https://terra.nasa.gov/about/terra-instruments/modis)
+
 
 ---
-###  Case study of MODIS in action
-Estimating burnt land cover (L et al., 2006)
-In this paper involves MODIS data being used to estimate wildfires. The 500m resolution imagery from Terra Modis to map the fire scar on land. This then used to adjust the fire pixels (MOD14/MYD14) detected from MODIS as alongside, other environmental variables through a regression tree. The final outcome was tested against independent record of wildfire incidents by Canada, US and Russia. The paper was able to identify the Northern Hemisphere Africa as the most fire-active region.
+###  Case study: 
 
-The findings indicate that MODIS gives both fire pixel as well as normal surface reflectance imagery. These can be used to determine fire active regions and their contribution it carbon emissions.
+#### Global estimation of burned area using MODIS active fire observations by Giglio et al (2006)
 
-background-image: url(week_2/Estimating burnt land cover.jpg)
-background-size: cover
+&lt;div style="font-size: 85%; line-height: 1.45;"&gt;
+
+This paper introduces a method to estimate monthly global burned area using MODIS active fire data and vegetation cover information.
+
+The method used was regional regression trees based on fire pixel (MOD14/MYD14) clusters and vegetation types, with corrections for tropical deforestation. 
+
+The 500m resolution imagery from Terra MODIS was used to map the fire scars on land. The temporal resolution of MODIS was about 4 years (2001–2004).
+
+The results  show strong agreement with independent fire data from Canada, the US, and Russia, offering a reliable interim global burned area dataset.
+
+The final outcome was tested against independent record of wildfire incidents by Canada, US and Russia. This showed strong agreement with them, offering a reliable interim global burned area dataset.
+
+&lt;div&gt;
+ 
+---
+
+### Key Insights:
+
+&lt;div style="font-size: 85%; line-height: 1.45;"&gt;
+
+-  MODIS data was main dataset which provided both the active fire observations used for calibration and the burned area data being estimated.
+
+- It also supplied valuable vegetation cover data, which enhanced the accuracy of the results. 
+&lt;div&gt;
+A map of the active fire regions land cover from the study is shown below.
+
+&lt;div&gt;
+
+&lt;img src="week_2/Estimating_burnt_land_cover.jpg" style="width: 45%; display: block; margin: auto;" /&gt;
+&lt;div style="font-size: 60%;"&gt;
+Source: [Giglio et al (2006)](https://acp.copernicus.org/articles/6/957/2006/acp-6-957-2006.pdf)
+
 ---
 ### Comparison of MODIS with other sensors
+&lt;div style="font-size: 85%; line-height: 1.45;"&gt;
 
-This articles reviews surface Urban Heat Island and how satellites are used to as a vital source of data to research on it. The paper also review the comparisons between the satellite sensors - Landsat, MODIS, and ASTER. Here is a summary of the findings.(Zhou et al., 2019)
-
+This articles reviews surface Urban Heat Island. It makes a comparison of satellites as they provide different sources data of  for the study. Here is a summary of the findings.(Zhou et al., 2019)
+&lt;div&gt;
 --
 
-&lt;div style="font-size: 80%;"&gt;
+&lt;div style="font-size: 70%;"&gt;
 
 | Feature                                     | Landsat  | MODIS | ASTER |
 |---------------------------------------------|---------|--------|------|
@@ -104,31 +139,40 @@ This articles reviews surface Urban Heat Island and how satellites are used to a
 | Daytime and Nighttime Data              | Data available primarily for daytime | Data available for both daytime and nighttime | Data available for both daytime and nighttime |
 | Atmospheric Correction for Standard Products | Corrections previously not done for all products before publications | Corrections done before publications | Corrections not done for all products before publications |
 
-From this table, MODIS has a high temporal resolution and atmospheric corrections done before publication. This makes it ideal for monitoring dynamic environmental changes.
+&lt;div&gt;
 
+&lt;br&gt;
+&lt;div style="font-size: 130%;"&gt;
+From this table, MODIS has a high temporal resolution and atmospheric corrections done before publication. This makes it easy and ideal for monitoring dynamic environmental changes.
+
+&lt;div&gt;
 
 ---
 ### Reflection on MODIS.
 
+&lt;div style="font-size: 85%; line-height: 1.45;"&gt;
 
-From the previous slide,
-- The MODIS can be fairly used for research work on environmental events though it has some flawless. This is not to mention that fact that some natural occurrences happen within a short period of time. Could be a couple of days so the temporal resolution of MODIS gives it a great advantage in time conscious natural events. Also, the atmospheric corrections done before publication makes it easier to compare results from different papers. 
+#### From the previous slide,
+- MODIS is well-suited for research on environmental events, especially those that occur over short time periods. Its high temporal resolution (1–2 days) gives it an advantage for time-sensitive natural events.
+- The fact that atmospheric corrections are applied before publication also makes it easier to compare results across studies, adding to its reliability in scientific research.
 
-Other general reflections on MODIS include:
+#### Other reflections on MODIS include:
 
-- The MODIS sensor is a vital remote sensing tool that provides a vast dataset due to its short revisit period, making it ideal for monitoring dynamic environmental changes. While MODIS has a low spatial resolution, its frequent observations allow researchers to track time-sensitive events effectively
-- For example, it can be used during natural disaster monitoring, such as wildfires to understand the trend of event and map out hotspots. This is particularly useful for identifying areas prone to natural disasters and implementing preventive policies to mitigate potential impacts
-- Climate change is a still a debated story, with opposition claiming the theory is based on faulty climate models. The vast temporal and detailed data from MODIS sensor can be used to as training data for improving the models to understand climate change. The data may include detailed temporal data on cloud cover, aerosols, and temperature variations. 
-- The dataset can be used to in conjunction with machine learning climate models to improve climate models, addressing concerns about the accuracy of climate change predictions. Thus, improving long-term weather forecasting and climate change simulations
+- Xaringan is a great tool for creating presentations. It is easy to use but can be time consuming when create slides with a lot of small details.
+- Aagin, MODIS short revisit time can make it an ideal sensor for creating a digital twin of the earth, which can be used to monitor and predict environmental changes in real-time. 
+- However, the spatial resolution not being high, can pose a challenge when monitoring small-scale environmental changes.
+- This brings to mind the need model to be developed to enhance the spatial resolution of old satellites such as MODIS, to make them more useful.
   
 ---
 ### References
+&lt;div style="font-size: 68%; line-height: 1.45;"&gt;
 
-L, G., Werf, G., Randerson, J., Collatz, G., Kasibhatla, P., 2006. Global estimation of burned area using MODIS active fire observations. Atmospheric Chem. Phys. 5. https://doi.org/10.5194/acp-6-957-2006
+L, Giglio, Werf, G., Randerson, J., Collatz, G., Kasibhatla, P., 2006. Global estimation of burned area using MODIS active fire observations. Atmospheric Chem. Phys. 5. https://doi.org/10.5194/acp-6-957-2006
 
-MODIS Web [WWW Document], n.d. URL https://modis.gsfc.nasa.gov/data/ (accessed 3.13.25).
+NASA, MODIS Data. URL https://modis.gsfc.nasa.gov/data/ (accessed 3.13.25).
 
-Thome, K., n.d. MODIS | Terra [WWW Document]. URL https://terra.nasa.gov/about/terra-instruments/modis (accessed 3.13.25).
+NASA TERRA, MODIS NASA TERRA. URL https://terra.nasa.gov/about/terra-instruments/modis (accessed 3.27.25).
+
 
 Zhou, D., Xiao, J., Bonafoni, S., Berger, C., Deilami, K., Zhou, Y., Frolking, S., Yao, R., Qiao, Z., Sobrino, J.A., 2019. Satellite Remote Sensing of Surface Urban Heat Islands: Progress, Challenges, and Perspectives. Remote Sens. 11, 48. https://doi.org/10.3390/rs11010048
 
